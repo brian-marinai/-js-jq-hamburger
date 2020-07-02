@@ -1,11 +1,14 @@
+
 $("a").click(
   function() {
-    $("").addClass("hamburger-menu active");
-    console.log("ho cliccato");
+    var active = $(".hamburger-menu").hasClass("active");
+    if (active == true) {
+      $(".hamburger-menu").removeClass("active");
+    } else {
+      $(".hamburger-menu").addClass("active");
+    }
   }
 );
-
-
 
 // $("i").click(
 //   function() {
@@ -21,4 +24,4 @@ $("a").click(
 //   );
 
 
-console.log("inizio");
+// console.log("inizio");
